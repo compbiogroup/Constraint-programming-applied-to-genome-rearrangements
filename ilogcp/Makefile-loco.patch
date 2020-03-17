@@ -1,0 +1,24 @@
+--- Makefile	2011-10-07 22:40:35.000000000 -0300
++++ Makefile.new	2011-10-07 22:45:19.000000000 -0300
+@@ -3,8 +3,8 @@
+ ODIR=./obj
+ VPATH=./src
+ 
+-CONCERTDIR = /usr/local/ilog/concert29
+-CPOPTIMIZERDIR = /usr/local/ilog/cpoptimizer23
++CONCERTDIR = /home/victor/ilog/concert29
++CPOPTIMIZERDIR = /home/victor/ilog/cpoptimizer23
+ 
+ TARGET=clp_dist
+ 
+@@ -18,8 +18,8 @@
+ -I$(CONCERTDIR)/include -fstrict-aliasing -pedantic -g -Wall		\
+ -fexceptions -ffloat-store -DILOUSEMT -D_REENTRANT -DILM_REENTRANT
+ 
+-LDFLAGS = -L$(CPOPTIMIZERDIR)/lib/x86-64_debian4.0_4.1/static_pic -lcp	\
+--lcplex -L$(CONCERTDIR)/lib/x86-64_debian4.0_4.1/static_pic -lconcert	\
++LDFLAGS = -L$(CPOPTIMIZERDIR)/lib/x86_debian4.0_4.1/static_pic -lcp	\
++-lcplex -L$(CONCERTDIR)/lib/x86_debian4.0_4.1/static_pic -lconcert	\
+ -lpthread
+ 
+ .PHONY: all clean

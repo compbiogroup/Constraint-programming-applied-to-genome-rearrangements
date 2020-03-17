@@ -1,0 +1,1 @@
+glpsol -m <modelo.mod> -d <arquivo com definicoes de entrada> -o <arquivo de saida do resultado>

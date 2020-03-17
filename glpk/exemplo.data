@@ -1,0 +1,13 @@
+data;
+
+param N:= 4;
+
+param UB := 4;
+
+param LB := 0;
+
+param Pi := [1] 4,[2] 1,[3] 2,[4] 3;
+
+param Sigma := [1] 1,[2] 2,[3] 3,[4] 4;
+
+end;
